@@ -1,21 +1,21 @@
 const initialBookState = {
   booklist: [{
-    id: Math.random(0, 100),
+    id: Math.random() * 100,
     title: 'Harry Potter',
     category: 'Fanatsy',
   },
   {
-    id: Math.random(0, 100),
+    id: Math.random() * 100,
     title: 'Terminator',
     category: 'Sci-Fi',
   },
   {
-    id: Math.random(0, 100),
+    id: Math.random() * 100,
     title: 'Steve Jobs',
     category: 'Biography',
   },
   {
-    id: Math.random(0, 100),
+    id: Math.random() * 100,
     title: 'Psycho',
     category: 'Horror',
   }],
@@ -27,10 +27,14 @@ const bookReducer = (state = initialBookState, action) => {
       return {
         booklist: [...state.booklist, action.payload],
       };
-    case 'REMOVE_BOOK':
+    case 'REMOVE_BOOK': {
+      const newBooklist = state.booklist.filter(item => item.id === action.payload.id);
+
       return {
-        booklist: state.booklist.filter(item => item.id !== action.payload.id),
+        ...state,
+        bookList: newBooklist,
       };
+    }
     default:
       return state;
   }
