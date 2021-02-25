@@ -22,7 +22,7 @@ const BooksList = () => {
           </tr>
         </thead>
         <tbody>
-          {bookList.current.map(item => (
+          {bookList.map(item => (
             <Book book={item} key={`${item} + ${Math.random(0, 100)}`} handleRemove={handleRemove} />
           ))}
         </tbody>
