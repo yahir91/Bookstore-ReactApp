@@ -15,14 +15,18 @@ const BooksForm = () => {
       title,
       category,
     }));
+    setTitle('');
+    setCategory('Action');
+    document.getElementById('create-book-form').reset();
   };
-  const handleChange = e => {
-    if (e.target.name === 'title') {
-      setTitle(e.target.value);
+  const handleChange = ({ target: { name, value } }) => {
+    if (name === 'title') {
+      setTitle(value);
     } else {
-      setCategory(e.target.value);
+      setCategory(value);
     }
   };
+  
   return (
     <div>
       <form onSubmit={handleSubmit}>
