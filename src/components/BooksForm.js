@@ -15,17 +15,19 @@ const BooksForm = () => {
       title,
       category,
     }));
+    document.getElementById('create-book-form').reset();
   };
-  const handleChange = e => {
-    if (e.target.name === 'title') {
-      setTitle(e.target.value);
+  const handleChange = ({ target: { name, value } }) => {
+    if (name === 'title') {
+      setTitle(value);
     } else {
-      setCategory(e.target.value);
+      setCategory(value);
     }
   };
+
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} id="create-book-form">
         <input type="text" name="title" onChange={handleChange} />
         <select name="categories" onChange={handleChange}>
           {categoryList.map(item => <option value={item} key={`${item}_option`}>{item}</option>)}
