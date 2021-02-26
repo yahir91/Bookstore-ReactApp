@@ -7,7 +7,8 @@ const filterReducer = (state = initialFilterState, action) => {
   switch (action.type) {
     case 'CHANGE_FILTER':
       return {
-        booklist: [...state.booklist, action.payload],
+        ...state,
+        filter: action.payload
       };
     default:
       return state;
