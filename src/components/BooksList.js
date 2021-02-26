@@ -5,7 +5,7 @@ import Book from './Book';
 const BooksList = () => {
   const bookList = useSelector(state => state.book.booklist);
   const dispatch = useDispatch();
-  const handleRemove = book => {
+  const handleRemoveBook = book => {
     dispatch(removeBook(book));
   };
 
@@ -21,7 +21,7 @@ const BooksList = () => {
         </thead>
         <tbody>
           {bookList.map(item => (
-            <Book book={item} key={`${item} + ${Math.random(0, 100)}`} handleRemove={handleRemove} />
+            <Book book={item} key={`${item} + ${Math.random(0, 100)}`} handleRemove={handleRemoveBook} />
           ))}
         </tbody>
       </table>
