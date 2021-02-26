@@ -1,5 +1,5 @@
 const initialFilterState = {
-  filter: 'All'
+  filter: ''
 }
 
 
