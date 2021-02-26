@@ -8,7 +8,7 @@ const BooksForm = () => {
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
   const dispatch = useDispatch();
-  const handleForm = e => {
+  const handleSubmit = e => {
     e.preventDefault();
     dispatch(createBook({
       id: Math.random() * 100,
@@ -25,7 +25,7 @@ const BooksForm = () => {
   };
   return (
     <div>
-      <form onSubmit={handleForm}>
+      <form onSubmit={handleSubmit}>
         <input type="text" name="title" onChange={handleChange} />
         <select name="categories" onChange={handleChange}>
           {categoryList.map(item => <option value={item} key={`${item}_option`}>{item}</option>)}
