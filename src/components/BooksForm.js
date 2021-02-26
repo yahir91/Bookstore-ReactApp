@@ -15,6 +15,8 @@ const BooksForm = () => {
       title,
       category,
     }));
+    setTitle('');
+    setCategory('Action');
     document.getElementById('create-book-form').reset();
   };
   const handleChange = ({ target: { name, value } }) => {
