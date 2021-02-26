@@ -28,6 +28,7 @@ const BooksForm = () => {
       <form onSubmit={handleSubmit}>
         <input type="text" name="title" onChange={handleChange} />
         <select name="categories" onChange={handleChange}>
+          <option selected disabled>Select a category</option>
           {categoryList.map(item => <option value={item} key={`${item}_option`}>{item}</option>)}
         </select>
         <button type="submit">Add Book</button>

@@ -1,15 +1,17 @@
 const initialFilterState = {
-  filter: ''
-}
-
+  current: 'All',
+};
 
 const filterReducer = (state = initialFilterState, action) => {
   switch (action.type) {
-    case 'CHANGE_FILTER':
-      return {
+    case 'CHANGE_FILTER': {
+      const current = action.payload;
+
+      const result = {
         ...state,
-        filter: action.payload
+        current,
       };
+      return result; }
     default:
       return state;
   }
