@@ -6,9 +6,7 @@ const BooksList = () => {
   const bookList = useSelector(state => state.book.booklist);
   const dispatch = useDispatch();
   const handleRemove = book => {
-    dispatch(removeBook({
-      id: book.id,
-    }));
+    dispatch(removeBook(book));
   };
 
   return (
