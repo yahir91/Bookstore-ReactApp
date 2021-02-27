@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { removeBook, filterBooks } from '../actions';
-import Book from './Book';
-import CategoryFilter from './CategoryFilter';
+import Book from '../components/Book';
+import CategoryFilter from '../components/CategoryFilter';
 
 const BooksList = () => {
   const bookList = useSelector(state => state.book.booklist);
