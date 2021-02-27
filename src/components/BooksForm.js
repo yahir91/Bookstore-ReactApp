@@ -8,24 +8,28 @@ const BooksForm = () => {
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
   const dispatch = useDispatch();
-  const handleForm = e => {
+  const handleSubmit = e => {
     e.preventDefault();
     dispatch(createBook({
       id: Math.random() * 100,
       title,
       category,
     }));
+    setTitle('');
+    setCategory('Action');
+    document.getElementById('create-book-form').reset();
   };
-  const handleChange = e => {
-    if (e.target.name === 'title') {
-      setTitle(e.target.value);
+  const handleChange = ({ target: { name, value } }) => {
+    if (name === 'title') {
+      setTitle(value);
     } else {
-      setCategory(e.target.value);
+      setCategory(value);
     }
   };
+
   return (
     <div>
-      <form onSubmit={handleForm}>
+      <form onSubmit={handleSubmit} id="create-book-form">
         <input type="text" name="title" onChange={handleChange} />
         <select name="categories" onChange={handleChange}>
           {categoryList.map(item => <option value={item} key={`${item}_option`}>{item}</option>)}
