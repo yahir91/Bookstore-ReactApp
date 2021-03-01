@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { filterBooks, removeBook } from '../actions';
 import Book from '../components/Book';
 import CategoryFilter from '../components/CategoryFilter';
+import '../styles/booklist.css';
 
 const BooksList = () => {
   const bookList = useSelector(state => state.book.booklist);
@@ -19,8 +20,16 @@ const BooksList = () => {
   };
 
   return (
+
     <div>
-      <CategoryFilter event={handleCategory} />
+      <div className="navbar">
+        <span className="bookstore-cms">Bookstore CMS</span>
+        <span className="books">Books</span>
+        <CategoryFilter event={handleCategory} />
+        <div className="oval">
+          <img src="/imgs/user.png" alt="user-icon" />
+        </div>
+      </div>
       <table>
         <thead>
           <tr>

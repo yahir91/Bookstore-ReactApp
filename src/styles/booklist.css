@@ -1,0 +1,72 @@
+.navbar {
+  width: 1400px;
+  height: 95px;
+  margin: 0 0 38px;
+  padding: 23px 99px 27px 100px;
+  background-color: white;
+  display: flex;
+}
+
+.bookstore-cms {
+  width: 240px;
+  height: 37px;
+  margin: 6px 47px 2px 0;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #67bbfd;
+}
+
+.books {
+    width: 59px;
+    height: 16px;
+    margin: 18px 41px 11px 0;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.9px;
+    color: gray;
+}
+
+.oval {
+    width: 25px;
+    height: 25px;
+    margin: 0 0 0 664px;
+    padding: 14px;
+    border: solid 1px #e8e8e8;
+    border-radius: 50%;
+    display: flex;
+}
+
+.oval img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-top: 5px;
+    align-items: center;
+    background-color: var(--azure);
+}
+
+.category {
+    width: 105px;
+    height: 16px;
+    margin: 18px 0px 11px 41px;
+    opacity: 0.5;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.9px;
+    color: var(--black-two);
+    border:none;
+    outline:0px;
+}
