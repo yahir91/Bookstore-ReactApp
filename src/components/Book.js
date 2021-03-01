@@ -17,11 +17,11 @@ const Book = ({ book, handleRemove }) => (
       <img src="/imgs/progress.png" alt="progress circle" />
       <div>
         <h1>84%</h1>
-        <h6>Completed</h6>
+        <p>Completed</p>
       </div>
     </div>
     <div className="book-chapter">
-      <p>Current Chapter</p>
+      <p>CURRENT CHAPTER</p>
       <h5>Chapter 17</h5>
       <button className="btn" type="button">Update Progress</button>
     </div>

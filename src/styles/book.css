@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   width: 85%;
-  border: 1px solid lightgray;
   margin: 1rem auto;
   background: white;
   border-radius: 4px;
@@ -52,14 +51,37 @@
   justify-content: center;
 }
 
+.book-progress div h1 {
+  margin: 0.5rem 0 0.2rem 0;
+  font-weight: 400;
+}
+
+.book-chapter p {
+  color: #888;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.book-progress div p {
+  font-size: 0.7rem;
+  color: #888;
+}
+
 .book-chapter {
   width: 30%;
   padding: 1.5rem;
 }
 
+.book-chapter h5 {
+  color: #888;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
 .book-progress img {
-  width: 25%;
-  height: 70%;
+  width: 35%;
+  height: 55%;
   margin-right: 1.5rem;
-  margin-top: 1.5rem;
 }
