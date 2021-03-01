@@ -1,0 +1,32 @@
+form {
+  margin: 0 auto 3rem auto;
+}
+
+form select {
+  width: 25%;
+  margin: 0 1.5rem;
+  height: 2.5em;
+  border-radius: 2px;
+  border: 1px solid lightgray;
+  outline: none;
+  background: none;
+  color: lightgray;
+}
+
+form input {
+  width: 50%;
+  height: 2em;
+  border-radius: 2px;
+  border: 1px solid lightgray;
+  outline: none;
+}
+
+form button {
+  width: 20%;
+  height: 3em;
+}
+
+.book-form {
+  padding: 0 6rem;
+  margin-top: 3rem;
+}

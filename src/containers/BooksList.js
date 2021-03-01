@@ -30,20 +30,11 @@ const BooksList = () => {
           <img src="/imgs/user.png" alt="user-icon" />
         </div>
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Book Id</th>
-            <th>title</th>
-            <th>Category</th>
-          </tr>
-        </thead>
-        <tbody>
-          {bookList.filter(item => (currentFilter === 'All' ? true : item.category === currentFilter)).map(item => (
-            <Book book={item} key={`${item} + ${Math.random(0, 100)}`} handleRemove={handleRemoveBook} />
-          ))}
-        </tbody>
-      </table>
+      <div className="book-list">
+        {bookList.filter(item => (currentFilter === 'All' ? true : item.category === currentFilter)).map(item => (
+          <Book book={item} key={`${item} + ${Math.random(0, 100)}`} handleRemove={handleRemoveBook} />
+        ))}
+      </div>
     </div>
   );
 };

@@ -25,3 +25,12 @@ code {
     'Courier New',
     monospace;
 }
+
+.btn {
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  padding: 0.5rem 2rem;
+  color: #cbdded;
+  background: rgb(58, 173, 211);
+}
