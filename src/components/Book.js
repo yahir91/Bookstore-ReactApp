@@ -6,6 +6,7 @@ const Book = ({ book, handleRemove }) => (
     <div className="book-info">
       <h4>{book.category}</h4>
       <h1>{book.title}</h1>
+      <h3>George Martin</h3>
       <div className="book-actions">
         <p className="remove">Comments</p>
         <button className="remove" onClick={() => handleRemove(book)} type="button">Remove</button>
@@ -13,7 +14,7 @@ const Book = ({ book, handleRemove }) => (
       </div>
     </div>
     <div className="book-progress">
-      <img src="" alt="progress circle" />
+      <img src="/imgs/progress.png" alt="progress circle" />
       <div>
         <h1>84%</h1>
         <h6>Completed</h6>

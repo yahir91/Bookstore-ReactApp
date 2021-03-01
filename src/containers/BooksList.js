@@ -23,9 +23,11 @@ const BooksList = () => {
 
     <div>
       <div className="navbar">
-        <span className="bookstore-cms">Bookstore CMS</span>
-        <span className="books">Books</span>
-        <CategoryFilter event={handleCategory} />
+        <div className="first-nav">
+          <span className="bookstore-cms">Bookstore CMS</span>
+          <span className="books">Books</span>
+          <CategoryFilter event={handleCategory} />
+        </div>
         <div className="oval">
           <img src="/imgs/user.png" alt="user-icon" />
         </div>

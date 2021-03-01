@@ -2,7 +2,7 @@ const initialBookState = {
   booklist: [{
     id: Math.random() * 100,
     title: 'Harry Potter',
-    category: 'Fanatsy',
+    category: 'Action',
   },
   {
     id: Math.random() * 100,

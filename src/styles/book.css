@@ -5,7 +5,8 @@
   border: 1px solid lightgray;
   margin: 1rem auto;
   background: white;
-  border-radius: 10px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
 }
 
 .book-info {
@@ -16,18 +17,28 @@
 .book-info h4 {
   color: gray;
   font-size: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .book-info h1 {
   font-size: 1.7rem;
+  margin-bottom: 0.2rem;
+}
+
+.book-info h3 {
+  font-size: 1rem;
+  color: #689ecb;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
 }
 
 .remove {
   border: none;
   outline: none;
   background: none;
-  color: #cbdded;
-  margin: 0 0.5rem;
+  color: #689ecb;
+  margin-right: 0.5rem;
+  font-size: 1rem;
 }
 
 .book-actions {
@@ -44,4 +55,11 @@
 .book-chapter {
   width: 30%;
   padding: 1.5rem;
+}
+
+.book-progress img {
+  width: 25%;
+  height: 70%;
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
 }

@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family:
@@ -14,6 +20,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #fafafa;
 }
 
 code {
@@ -32,5 +39,5 @@ code {
   outline: none;
   padding: 0.5rem 2rem;
   color: #cbdded;
-  background: rgb(58, 173, 211);
+  background: #068ffd;
 }

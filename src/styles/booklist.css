@@ -1,75 +1,66 @@
 .navbar {
-  width: 1400px;
-  height: 95px;
+  width: 100%;
+  height: 70px;
   margin: 0 0 38px;
   padding: 23px 99px 27px 100px;
   background-color: white;
   display: flex;
+  border: solid 1px #e8e8e8;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .book-list {
   width: 100%;
-  background: #fafafa;
+}
+
+.first-nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
 }
 
 .bookstore-cms {
   width: 240px;
   height: 37px;
-  margin: 6px 47px 2px 0;
   font-family: Montserrat;
   font-size: 30px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #67bbfd;
 }
 
 .books {
   width: 59px;
   height: 16px;
-  margin: 18px 41px 11px 0;
   font-family: Montserrat;
   font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 1.9px;
   color: gray;
 }
 
 .oval {
-  width: 25px;
-  height: 25px;
-  margin: 0 0 0 664px;
-  padding: 14px;
+  width: 45px;
+  height: 45px;
   border: solid 1px #e8e8e8;
   border-radius: 50%;
-  display: flex;
+  position: relative
 }
 
 .oval img {
   width: 20px;
   height: 20px;
-  margin-left: 5px;
-  margin-top: 5px;
   align-items: center;
+  transform: translate(50%, 50%);
   background-color: var(--azure);
 }
 
 .category {
   width: 105px;
   height: 16px;
-  margin: 18px 0 11px 41px;
   opacity: 0.5;
   font-family: Montserrat;
   font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 1.9px;
   color: var(--black-two);
   border: none;
