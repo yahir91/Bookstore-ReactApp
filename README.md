@@ -3,6 +3,8 @@
 
 > This is a front-end solution for Magic-books Inc. They have requested the front-end of an application that will help them organize and manage their bookstore.
 
+![Page](./home.png)
+
 ## Getting Started
 
 ### `git clone https://github.com/jurgen1c/bookstore-cms.git`

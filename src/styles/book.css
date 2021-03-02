@@ -1,0 +1,87 @@
+.book-cont {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  margin: 1rem auto;
+  background: white;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+}
+
+.book-info {
+  width: 40%;
+  padding: 1.5rem;
+}
+
+.book-info h4 {
+  color: gray;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.book-info h1 {
+  font-size: 1.7rem;
+  margin-bottom: 0.2rem;
+}
+
+.book-info h3 {
+  font-size: 1rem;
+  color: #689ecb;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.remove {
+  border: none;
+  outline: none;
+  background: none;
+  color: #689ecb;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.book-actions {
+  display: flex;
+}
+
+.book-progress {
+  width: 25%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.book-progress div h1 {
+  margin: 0.5rem 0 0.2rem 0;
+  font-weight: 400;
+}
+
+.book-chapter p {
+  color: #888;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.book-progress div p {
+  font-size: 0.7rem;
+  color: #888;
+}
+
+.book-chapter {
+  width: 30%;
+  padding: 1.5rem;
+}
+
+.book-chapter h5 {
+  color: #888;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.book-progress img {
+  width: 35%;
+  height: 55%;
+  margin-right: 1.5rem;
+}

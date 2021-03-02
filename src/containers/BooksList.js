@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { filterBooks, removeBook } from '../actions';
 import Book from '../components/Book';
 import CategoryFilter from '../components/CategoryFilter';
+import '../styles/booklist.css';
 
 const BooksList = () => {
   const bookList = useSelector(state => state.book.booklist);
@@ -19,22 +20,23 @@ const BooksList = () => {
   };
 
   return (
+
     <div>
-      <CategoryFilter event={handleCategory} />
-      <table>
-        <thead>
-          <tr>
-            <th>Book Id</th>
-            <th>title</th>
-            <th>Category</th>
-          </tr>
-        </thead>
-        <tbody>
-          {bookList.filter(item => (currentFilter === 'All' ? true : item.category === currentFilter)).map(item => (
-            <Book book={item} key={`${item} + ${Math.random(0, 100)}`} handleRemove={handleRemoveBook} />
-          ))}
-        </tbody>
-      </table>
+      <div className="navbar">
+        <div className="first-nav">
+          <span className="bookstore-cms">Bookstore CMS</span>
+          <span className="books">Books</span>
+          <CategoryFilter event={handleCategory} />
+        </div>
+        <div className="oval">
+          <img src="/imgs/user.png" alt="user-icon" />
+        </div>
+      </div>
+      <div className="book-list">
+        {bookList.filter(item => (currentFilter === 'All' ? true : item.category === currentFilter)).map(item => (
+          <Book book={item} key={`${item} + ${Math.random(0, 100)}`} handleRemove={handleRemoveBook} />
+        ))}
+      </div>
     </div>
   );
 };

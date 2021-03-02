@@ -1,0 +1,44 @@
+form {
+  margin: 0 auto 3rem auto;
+}
+
+form select {
+  width: 25%;
+  margin: 0 1.5rem;
+  height: 4em;
+  border-radius: 2px;
+  border: 1px solid lightgray;
+  outline: none;
+  background: none;
+  color: #888;
+}
+
+form input {
+  width: 50%;
+  height: 2.5em;
+  border-radius: 2px;
+  border: 1px solid lightgray;
+  outline: none;
+  font-size: 1.3rem;
+  padding-left: 1.5rem;
+}
+
+form button {
+  width: 20%;
+  height: 3.5rem;
+  font-size: 1.3rem;
+}
+
+.book-form {
+  padding: 0 6rem;
+  margin-top: 3rem;
+}
+
+.book-form h1 {
+  margin: 2rem 0 1.2rem 0;
+  color: #888;
+}
+
+.book-form hr {
+  border: solid 1px #e8e8e8;
+}
